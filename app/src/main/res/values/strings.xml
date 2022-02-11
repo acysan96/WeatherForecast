@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WeatherForecast</string>
+
+    <string-array name="spinner_thanhpho">
+        <item>Hanoi</item>
+        <item>Dalat</item>
+        <item>Tokyo</item>
+        <item>Hue</item>
+        <item>Nhatrang</item>
+    </string-array>
+
+</resources>

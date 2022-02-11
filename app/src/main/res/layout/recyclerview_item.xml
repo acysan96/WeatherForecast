@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="5dp"
+    card_view:contentPadding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/imgWeather"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/txt_nhietdo"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgWeather"
+            android:text="Nhiệt độ"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:paddingBottom="13dp"/>
+
+        <TextView
+            android:id="@+id/txt_tocdogio"
+            android:textSize="15sp"
+            android:text="Tốc độ gió"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_toRightOf="@+id/imgWeather"
+            android:layout_below="@+id/txt_nhietdo"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txt_tamnhin"
+            android:textSize="15sp"
+            android:text="Tầm nhìn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_toRightOf="@+id/imgWeather"
+            android:layout_below="@+id/txt_tocdogio"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txt_thoigian"
+            android:textSize="15sp"
+            android:text="Thời gian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgWeather"
+            android:layout_below="@+id/txt_tamnhin"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/edt1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="1dp"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_nhietdo"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/edt2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="1dp"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/txt_nhietdo"
+            android:layout_below="@+id/edt1"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/edt3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="1dp"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_nhietdo"
+            android:layout_below="@+id/edt2"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:id="@+id/edt4"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="1dp"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/txt_nhietdo"
+            android:layout_below="@+id/edt3"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
